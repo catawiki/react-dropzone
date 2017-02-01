@@ -211,7 +211,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      this.isFileDialogActive = false;
 	
 	      fileList.forEach(function (file) {
-	        if (file instanceof window.DataTransferItem) {
+	        if (!(file instanceof window.File)) {
 	          return;
 	        }
 	
